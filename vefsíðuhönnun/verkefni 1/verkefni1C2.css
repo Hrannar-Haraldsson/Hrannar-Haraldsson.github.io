@@ -1,0 +1,51 @@
+body{
+	margin-left: 350px;
+	margin-right:350px;
+	background-color: grey;
+	border: 3px solid white; 
+	padding: 15px;
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+
+a{
+	padding: 14px 360px;
+	color: white;
+	background-color: purple;
+	text-align: center;
+}
+
+a:hover {
+	background-color: red;
+}
+
+
+h1{
+	color:blue;
+	text-align: center;
+}
+
+h2{
+	color:orange;
+}
+
+strong{
+	color: green;
+}
+
+ul{
+	color: purple;
+}
+
+em{
+	color:blue;
+}
+
+.rettur{
+	color: red;
+}
+.raut{
+	color: yellow;
+}
+.imagen{
+	padding-left: 50px;
+}
