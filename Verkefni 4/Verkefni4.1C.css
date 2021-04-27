@@ -1,0 +1,147 @@
+body {
+  line-height: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  background: pink;
+  }
+h1 {
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'art'
+    'asA'
+    'asB'
+    'footer'
+    'topnav';
+}
+.titill1{display: block;}
+.titill2{display: none;}
+.titill3{display: none;}
+
+.topnav {
+background: #1c2d1c;
+grid-area: topnav; 
+}
+.header {
+background: tomato; 
+grid-area: header;
+}
+.footer {
+background: lightgreen; 
+grid-area: footer
+}
+.art {
+background: #00BFFF; 
+grid-area: art;
+padding: 1em;
+}
+.as1 {
+background: gold;
+grid-area: asA; 
+}
+.as2 {
+background: gold; 
+grid-area: asB;
+}
+
+.header,
+.footer,
+.art1,
+.as1, 
+.as2 {
+padding: 1em; 
+}
+
+.header h1 {
+color: #fff;
+line-height: 1.2;
+font-weight: normal;
+}
+.art1 h2 {
+margin: .7em 0 .8em 0;
+}
+.art1 h4 {
+text-align: justify;
+margin: .4em 0;
+}
+.art1 p {
+text-align: justify;
+}
+
+/* ========================================
+Efnisyfirlit (mobile)
+======================================== */
+
+.topnav ul{
+background: #1c2d1c; 
+}
+.topmenu {
+display: block;
+padding: 0;
+margin: 0;
+list-style: none; 
+}
+.topmenu li {
+border: 0;
+border-bottom: 1px solid lime; 
+padding: 0;
+margin:0;
+}
+.topmenu a {
+display: block;     /* ath! */
+color: white;
+text-decoration: none;
+text-align: center;
+padding: .4em 1em; 
+}
+.topmenu a:hover,
+.topmenu a:active,
+.virkur {
+color: black !important;
+background-color: lime;
+}
+
+@media screen and (min-width: 37.5em){
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header'
+      'asA art'
+      'asB art'
+      'footer footer'
+      'topnav topnav';
+  }
+  .titill1{display: none;}
+  .titill2{display: block;}
+  .titill3{display: none;}
+
+}
+
+
+@media screen and (min-width :48em){
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+
+      'topnav topnav topnav topnav topnav'
+      'header header header header header'
+      'asA art art  art asB'
+      'footer footer footer footer footer';
+  }
+  .titill1{display: none;}
+  .titill2{display: none;}
+  .titill3{display: block;}
+
+
+  .topmenu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  body {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 5em ;
+  }
+}
