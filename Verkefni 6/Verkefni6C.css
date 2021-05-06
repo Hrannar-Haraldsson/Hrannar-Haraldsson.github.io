@@ -1,0 +1,95 @@
+body {
+    font-style: normal;      /* italic , obligue */
+    font-weight: normal;     /* bold , 100 - 900 */
+    font-size: 1em;          /* 1px , 1rem , 100% */
+    line-height: 1.5;         /* tekur mið af einingunni sem er á font-size, staðlað 1.3 */
+    font-family: Helvetica, sans-serif; 
+    margin: 0 auto;
+    /* vafrinn tekur Helvetica ef það er til, annars system font (sans-serif) */ 
+}
+
+.efri {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgb(0, 0, 50), rgb(0, 0, 255));
+}
+.efri h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 75px;
+    margin: 0px;
+    
+    /* henti þessu út, þurfum þetta ekki... 
+    text-align: center;
+    display: grid;
+    align-items: center;
+    
+    */
+}
+.nedri {
+    height: 100vh;
+    background: linear-gradient(rgb(255, 209, 26),rgb(255, 255, 179));
+}
+#kula {
+    /* Fór í flex dæmið, grid-ið var ekki að virka, veit ekki alveg af hverju... */
+    display: flex;
+    flex-flow: column;
+    justify-content: center; 
+    text-align: center;
+    height: 40em;
+    width: 40em;
+    background: radial-gradient(closest-side, rgb(49, 157, 224), rgb(95, 180, 232), rgb(17, 77, 168));
+    border-radius: 50%;
+}
+
+.ma h1 {
+    font-size: 40px;
+    font-weight: 10;
+}
+.ma {
+    margin: 1em;
+}
+.griddid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.midjun {
+    width: 80%;
+    margin: 0 auto;
+}
+.letur{
+    font-size:5.5em;
+    font-family: 'Press Start 2P', cursive;    
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+a{
+    color: red;
+}
+
+.litur ul{
+    background: linear-gradient(rgb(0, 0, 50), rgb(0, 0, 255), rgb(0, 0, 50));
+}
+.topmenu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 6px; 
+    width: 10em;
+
+}
+.topmenu li {
+    border: 0;
+    border: 1px solid white; 
+    border-radius: 6px;
+    padding: 0;
+    margin:0;
+}
+
+.topmenu a {
+    color: white;
+    text-decoration: none;
+    text-align: center; 
+    display: inline-block;
+}
